@@ -974,3 +974,31 @@ a:focus-visible {
     flex-direction: column;
   }
 }
+
+/* Long-form document pages: privacy policy, support. Scoped so the portfolio
+   sections keep their display-sized headings. */
+.doc-copy h2 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  margin: 2rem 0 0.6rem;
+  max-width: none;
+}
+
+.doc-copy h2:first-child {
+  margin-top: 0;
+}
+
+.doc-copy ul {
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  padding-left: 1.15rem;
+}
+
+.doc-copy li {
+  margin-bottom: 0.4rem;
+}
+
+.doc-copy strong {
+  color: var(--text);
+}
