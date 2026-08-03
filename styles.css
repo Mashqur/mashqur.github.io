@@ -328,8 +328,7 @@ img {
 }
 
 .hero-grid,
-.split-layout,
-.contact-grid {
+.split-layout {
   align-items: center;
   display: grid;
   gap: 2.5rem;
@@ -591,16 +590,14 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.project-card,
-.contact-form {
+.project-card {
   backdrop-filter: blur(14px);
   background: color-mix(in srgb, var(--surface) 74%, transparent);
   border: 1px solid var(--line);
   border-radius: var(--radius);
 }
 
-.surface .project-card,
-.surface .contact-form {
+.surface .project-card {
   background: color-mix(in srgb, var(--surface) 70%, transparent);
 }
 
@@ -640,57 +637,11 @@ h3 {
 }
 
 .project-content a,
-.contact-links a,
 .footer-links a {
   color: var(--accent);
   font-weight: 800;
 }
 
-.contact-grid {
-  align-items: start;
-}
-
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.contact-form {
-  display: grid;
-  gap: 1rem;
-  padding: 1.4rem;
-}
-
-.contact-form label {
-  display: grid;
-  gap: 0.45rem;
-}
-
-.contact-form span {
-  color: var(--muted);
-  font-size: 0.88rem;
-  font-weight: 800;
-}
-
-input,
-textarea {
-  background: color-mix(in srgb, var(--surface) 84%, transparent);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  color: var(--text);
-  font: inherit;
-  min-height: 48px;
-  padding: 0.8rem 0.9rem;
-  width: 100%;
-}
-
-textarea {
-  resize: vertical;
-}
-
-input:focus,
-textarea:focus,
 button:focus-visible,
 a:focus-visible {
   outline: 3px solid color-mix(in srgb, var(--accent) 50%, transparent);
@@ -841,8 +792,7 @@ a:focus-visible {
 
   .hero-grid,
   .about-layout,
-  .split-layout,
-  .contact-grid {
+  .split-layout {
     grid-template-columns: 1fr;
   }
 
@@ -893,8 +843,7 @@ a:focus-visible {
 
   .hero-grid,
   .about-layout,
-  .split-layout,
-  .contact-grid {
+  .split-layout {
     gap: 2rem;
   }
 
