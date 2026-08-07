@@ -620,6 +620,13 @@ h3 {
   width: 64px;
 }
 
+/* A card whose app has real artwork shows it in place of the initials tile.
+   Same 64px box and radius, so the icon column stays aligned across cards. */
+img.app-icon {
+  display: block;
+  object-fit: cover;
+}
+
 .app-icon.blue {
   background: linear-gradient(135deg, #0a84ff, #42d4ff);
 }
