@@ -387,6 +387,35 @@ h3 {
   max-width: 680px;
 }
 
+/* App detail pages open with the app's own artwork beside its name, so the
+   page leads with the same mark users recognize from the store listing. */
+.product-lockup {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+/* The mark stays beside the name at every width: h1 is nowrap until the small
+   breakpoint, so letting this row wrap would drop the mark above the title. */
+.product-lockup h1 {
+  margin-bottom: 0;
+}
+
+/* Sub-pages sit the mark next to the app line and the page title together, so
+   the artwork lines up with "DiskSweep for macOS" rather than floating alone. */
+.product-lockup-text .eyebrow {
+  margin-bottom: 0.35rem;
+}
+
+.product-mark {
+  border-radius: 18px;
+  display: block;
+  flex-shrink: 0;
+  height: 72px;
+  width: 72px;
+}
+
 .hero-summary,
 .body-copy p,
 .timeline-item p,
@@ -852,6 +881,15 @@ a:focus-visible {
   .about-layout,
   .split-layout {
     gap: 2rem;
+  }
+
+  .product-lockup {
+    gap: 0.85rem;
+  }
+
+  .product-mark {
+    height: 56px;
+    width: 56px;
   }
 
   h1 {
